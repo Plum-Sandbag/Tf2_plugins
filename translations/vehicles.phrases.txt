@@ -1,0 +1,107 @@
+/**
+ * Copyright (C) 2021  Mikusch
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+"Phrases"
+{
+	"#Menu_Title_Main"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"
+		"en"		"Driveable Vehicles ({1}) by {2}\n{3}"
+	}
+	
+	"#Menu_Title_CreateVehicle"
+	{
+		"en"		"Spawn new vehicle:"
+	}
+	
+	"#Menu_Title_RemovePlayerVehicles"
+	{
+		"en"		"Remove player vehicles:"
+	}
+	
+	"#Menu_Item_CreateVehicle"
+	{
+		"en"		"Spawn new vehicle"
+	}
+	
+	"#Menu_Item_RemoveAimTargetVehicle"
+	{
+		"en"		"Remove vehicle at crosshair"
+	}
+	
+	"#Menu_Item_RemovePlayerVehicles"
+	{
+		"en"		"Remove player vehicles"
+	}
+	
+	"#Menu_Item_RemoveAllVehicles"
+	{
+		"en"		"Remove all vehicles"
+	}
+	
+	"#Menu_Item_ReloadVehicleConfig"
+	{
+		"en"		"Reload vehicle configuration"
+	}
+	
+	"#Command_CreateVehicle_Invalid"
+	{
+		"#format"	"{1:s}"
+		"en"		"Invalid or unknown vehicle: {1}"
+	}
+	
+	"#Command_RemoveVehicle_Success"
+	{
+		"en"		"Removed the vehicle at their crosshair."
+	}
+	
+	"#Command_RemovePlayerVehicles_Success"
+	{
+		"#format"	"{1:t}"
+		"en"		"Removed all vehicles of {1}."
+	}
+	
+	"#Command_RemoveAllVehicles_Success"
+	{
+		"en"		"Removed all vehicles in the world."
+	}
+	
+	"#Command_ReloadVehicleConfig_Success"
+	{
+		"en"		"Reloaded the vehicle configuration."
+	}
+	
+	"#Vehicle_HL2_Jeep"
+	{
+		"en"		"Half-Life 2 Jeep"
+	}
+	
+	"#Vehicle_HL2_Airboat"
+	{
+		"en"		"Half-Life 2 Airboat"
+	}
+	
+	"#Hint_VehicleKeys_Car"
+	{
+		"en"		"%%+speed%% TURBO %%+jump%% HANDBRAKE"
+	}
+	
+	"#Hint_VehicleKeys_Airboat"
+	{
+		"en"		"%%+forward%% SPEED UP %%+back%% SLOW DOWN %%+moveleft%% TURN LEFT %%+moveright%% TURN RIGHT"
+	}
+}

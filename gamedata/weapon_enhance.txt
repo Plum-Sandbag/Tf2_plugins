@@ -1,0 +1,91 @@
+"Games"
+{
+	"tf"
+	{
+		"Addresses"
+		{
+			"CTFPlayer::DoTauntAttack()::TauntAttackOffset"
+			{
+				// reads CTFPlayer.m_iTauntAttack early in the function
+				"signature"			"CTFPlayer::DoTauntAttack"
+				"linux"
+				{
+					"offset"		"88"
+				}
+				"windows"
+				{
+					"offset"		"78"
+				}
+			}
+		}
+		"Offsets"
+		{
+			"CTFBat::Smack"
+			{
+				"windows"	"470"
+				"linux"		"477"
+				"mac"		"477"
+			}
+			
+			"CBaseEntity::WorldSpaceCenter"
+			{
+				"windows"	"155"
+				"linux"		"156"
+				"mac"		"156"
+			}
+			"CBaseEntity::GetVelocity"
+			{
+				"windows"	"146"
+				"linux"		"147"
+				"mac"		"147"
+			}
+
+//			"m_iTauntAttack"		//m_iSpawnCounter -24
+//			{
+//				"windows"	"24"
+//				"linux"		"24"
+//			}
+			
+//			"m_flTauntAttackTime" 	//m_iSpawnCounter -32
+//			{
+//				"windows"	"32"
+//				"linux"		"32"
+//			}
+			"CBaseEntity::ResolveFlyCollisionCustom"
+			{
+				"linux"		"175"
+				"windows"	"174"
+			}
+		}
+		"Signatures"
+		{
+			"CTFPlayer::DoTauntAttack"	// ()
+			{
+				"library"	"server"
+				"windows" 	"\x53\x8B\xDC\x83\xEC\x08\x83\xE4\xF0\x83\xC4\x04\x55\x8B\x6B\x04\x89\x6C\x24\x04\x8B\xEC\x81\xEC\xE8\x0D\x00\x00"
+				"linux" 	"@_ZN9CTFPlayer13DoTauntAttackEv"
+			}
+		}
+		"Functions"
+		{
+			"CBaseEntity::ResolveFlyCollisionCustom"
+			{
+				"offset"	"CBaseEntity::ResolveFlyCollisionCustom"
+				"hooktype"	"entity"
+				"return"	"void"
+				"this"		"entity"
+				"arguments"
+				{
+					"trace"
+					{
+						"type"	"objectptr"
+					}
+					"vecVelocity"
+					{
+						"type"	"vectorptr"
+					}
+				}
+			}
+		}
+	}
+}

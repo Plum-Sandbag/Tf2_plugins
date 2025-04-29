@@ -1,0 +1,109 @@
+"Games"
+{
+	"tf"
+	{
+		"Offsets"
+		{
+			"CBaseEntity::WorldSpaceCenter"
+			{
+				"windows"	"155"
+				"linux"		"156"
+				"mac"		"156"
+			}
+			"CBaseEntity::GetVelocity"
+			{
+				"windows"	"146"
+				"linux"		"147"
+				"mac"		"147"
+			}
+			"CTFWeaponBaseMelee::Swing"
+			{
+				"linux"		"486"
+				"windows"	"479"
+			}
+			"CTFBat::Smack"
+			{
+				"windows"	"470"
+				"linux"		"477"
+				"mac"		"477"
+			}
+			"CTFWeaponBaseMelee::GetSmackAt"
+			{
+				"linux"		"478"
+				"windows"	"471"
+			}
+		}
+		"Signatures"
+		{
+			"CTFMedigunShield::UpdateShieldPosition()"
+			{
+				"library"		"server"
+				// string "WeaponMedi_Shield.Retract", most top function.
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2C\x57\x8B\xF9\x8B\x97\x10\x02\x00\x00\x85"
+				"linux"		"@_ZN16CTFMedigunShield20UpdateShieldPositionEv"
+
+			}
+			"CTFPlayer::PlayTauntSceneFromItem"
+			{
+				"library"			"server"
+				"windows"			"\x55\x8B\xEC\x81\xEC\x0C\x01\x00\x00\x53\x8B\x5D\x08\x57\x8B"
+				"linux"				"@_ZN9CTFPlayer22PlayTauntSceneFromItemEPK13CEconItemView"
+				"mac"				"@_ZN9CTFPlayer22PlayTauntSceneFromItemEPK13CEconItemView"
+			}
+			"LookupSequence" //int ( CStudioHdr *pstudiohdr, const char *label ) "spew_bars_context" NOTE: NOT CBaseAnimating::LookupSequence
+			{
+				"windows"	"\x55\x8B\xEC\x56\x8B\x75\x08\x85\xF6\x75\x2A\x33\xC0\x5E\x5D\xC3\x8B\xCE\xE8\x2A\x2A\x2A\x2A\x84\xC0\x74\x2A\x53"
+				"linux"		"@_Z14LookupSequenceP10CStudioHdrPKc"
+			}
+			"LookupActivity" //int ( CStudioHdr *pstudiohdr, const char *label ) "spew_bars_context" NOTE: NOT CBaseAnimating::LookupActivity
+			{
+				"windows"	"\x55\x8B\xEC\x57\x8B\x7D\x08\x85\xFF\x75\x2A\x33\xC0\x5F\x5D\xC3\x53"
+				"linux"		"@_Z14LookupActivityP10CStudioHdrPKc"
+			}
+			"CTFPlayer::PlaySpecificSequence"
+			{
+				"library"	"server"
+				"linux"		"@_ZN9CTFPlayer20PlaySpecificSequenceEPKc"
+				"windows"	"\x55\x8B\xEC\x53\x56\x8B\x75\x08\x57\x56\x8B\xF9\xE8\x2A\x2A\x2A\x2A\x8B\xD8"
+			}
+        			"CTFWeaponBase::SendWeaponAnim"
+        			{
+             				"library"	"server"
+         				"linux"	"@_ZN13CTFWeaponBase14SendWeaponAnimEi"
+        			}
+			"CGlobalEntityList::FindEntityInSphere"
+			{
+				// xref "NULL entity in global entity list!\n"
+				// process of elimination -- three arguments that branch to a mov+10004h
+				// two arguments is FindEntityByModel
+				"library"	"server"
+				"linux"		"@_ZN17CGlobalEntityList18FindEntityInSphereEP11CBaseEntityRK6VectorfP17IEntityFindFilter"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x0C\x53\x56\x57\x8B\xF9\x8B\x4D\x08"
+			}
+		}
+		"Functions"
+		{
+			"CTFMedigunShield::UpdateShieldPosition()"
+			{
+				"signature"		"CTFMedigunShield::UpdateShieldPosition()"
+				"callconv"		"thiscall"
+				"return"		"void"
+				"this"			"entity"
+			}
+			"CTFWeaponBaseMelee::Swing"
+			{
+				"offset"	"CTFWeaponBaseMelee::Swing"
+				"hooktype"	"entity"
+				"return"	"void"
+				"this"		"entity"
+				"arguments"
+				{
+					"pPlayer"
+					{
+						"type"	"cbaseentity"
+					}
+				}
+			}
+		}
+	}
+}

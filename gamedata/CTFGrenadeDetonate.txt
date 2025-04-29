@@ -1,0 +1,15 @@
+"Games"
+{
+	"tf"
+	{
+		"Offsets"
+		{
+			"GrenadeDetonate"
+			{
+				"windows"    "236"
+				"linux"      "237"
+				"mac"        "237"
+			}
+		}
+	}
+}

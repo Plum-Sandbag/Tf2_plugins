@@ -1,0 +1,22 @@
+"Games"
+{
+	"#default"
+	{
+		"Signatures"
+		{
+			"TimescaleCheatCheck"
+			{
+				"library" "engine"
+				"windows" "\x83\x78\x30\x00\x75\x1B\x8B\x0D\x2A\x2A\x2A\x2A"
+			}
+		}
+		
+		"Addresses"
+		{
+			"TimescaleCheatCheck"
+			{
+				"signature" "TimescaleCheatCheck"
+			}
+		}
+	}
+}

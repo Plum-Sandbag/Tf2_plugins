@@ -1,0 +1,135 @@
+"Phrases"
+{
+	"Offer item"
+	{
+		"en" "提供此物品"
+	}
+
+	"Trade item"
+	{
+		"en" "交易此物品"
+	}
+
+	"Trade Cooldown"
+	{
+		"en" "请稍等几分钟再交易."
+	}
+
+	"Trade Successful"
+	{
+		"en" "交易已经完成"
+	}
+
+	"Trade Active"
+	{
+		"en" "你已经在交易了."
+	}
+
+	"Trade Not Active"
+	{
+		"en" "你不在交易."
+	}
+
+	"Trade Select Player"
+	{
+		"en" "选择要交易的玩家"
+	}
+
+	"Trade Confirm"
+	{
+		"#format" "{1:N}"
+		"en" "你想与 {1} 进行交易吗?"
+	}
+
+	"Trade Confirm Cancel"
+	{
+		"en" "你想取消交易吗?"
+	}
+
+	"Trade Refused"
+	{
+		"#format" "{1:N}"
+		"en" "{1} 拒绝了你的交易请求."
+	}
+
+	"Trade Cancelled"
+	{
+		"en" "你的搭档取消了交易."
+	}
+
+	"Trade Title"
+	{
+		"#format" "{1:N},{2:d}"
+		"en" "你在给{1}\n-----------------------------\n赠送游戏点数 !offer <amount>\n你提供了 {2} 游戏点数"
+	}
+
+	"Player Left"
+	{
+		"en" "你想要交易的玩家已经离开了游戏."
+	}
+
+	"Waiting for confirmation"
+	{
+		"en" "请等待对方接受你的请求."
+	}
+
+	"Confirm_Offer_Item"
+	{
+		"#format" "{1:s},{2:s}"
+		"en" "是否提供你的 {1} {2}?"
+	}
+
+	"Confirm_Trade_Item"
+	{
+		"#format" "{1:s},{2:s}"
+		"en" "你想用你的 {1} {2}?"
+	}
+
+	"Ready"
+	{
+		"#format" "{1:s}"
+		"en" "准备 [{1}]"
+	}
+
+	"Cancel"
+	{
+		"en" "取消交易"
+	}
+
+	"Offer"
+	{
+		"en" "提供物品"
+	}
+
+	"Partner Ready"
+	{
+		"en" "你的搭档准备好了."
+	}
+
+	"Partner Not Ready"
+	{
+		"en" "你的搭档还没准备好."
+	}
+
+	"Partner Credit Offer"
+	{
+		"#format" "{1:d}"
+		"en" "你的搭档提供 {1} 的游戏点数(s)"
+	}
+
+	"Partner Item Offer"
+	{
+		"en" "你的搭档提供以下物品:"
+	}
+
+	"Ready Timer"
+	{
+		"#format" "{1:d}"
+		"en" "交易将在 {1} 秒后结束(s)..."
+	}
+
+	"Trade Menu"
+	{
+		"en" "要重新打开交易菜单，输入 !trade."
+	}
+}

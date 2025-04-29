@@ -1,0 +1,91 @@
+﻿"Phrases"
+{
+	"Vote Nextmap"
+	{
+		"chi"		"下一幅地图投票了!"
+	}
+
+	"Nextmap Voting Started"
+	{
+		"chi"		"下一幅地图投选已开始."
+	}
+
+	"Nextmap Voting Finished"
+	{
+		"chi"		" 地图投票已结束. 下一幅地图将为 {1}. ( 得票{2}%% , {3}票)"
+	}
+
+	"Current Map Extended"
+	{
+		"chi"		"当前地图已被延长."
+	}
+
+	"Extend Map"
+	{
+		"chi"		"延长当前地图"
+	}
+
+	"Dont Change"
+	{
+		"chi"		"请勿更换"
+	}
+
+	"Current Map Stays"
+	{
+		"chi"		"当前地图已被延长! 投票显示! (得票 {1}%% 共 {2} 票)"
+	}
+
+	"Changed Next Map"
+	{
+		"chi"		"更换下一幅地图为 \"{1}\"."
+	}
+	"Runoff Vote Nextmap"
+	{
+		"chi"		"最后一轮投票开始!!!"
+	}
+
+	"Number Of Votes"
+	{
+		"chi"		"票数"
+	}
+
+	"Revote Is Needed"
+	{
+		"#format"	"{1:i}"
+		"chi"		"没有地图取得{1}%%以上的票数.\n将开启新一轮投票!"
+	}
+
+	"Revote Warning"
+	{
+		"#format"	"{1:i}"
+		"chi"		"最后一轮投票开始于: {1}s后"
+	}
+
+	"Vote Warning"
+	{
+		"#format"	"{1:i}"
+		"chi"		"注意!在{1}s后启动下一幅地图的投票!"
+	}
+
+	"Line One"
+	{
+		"chi"		"好好想想你想玩哪张地图..."
+	}
+
+	"Line Two"
+	{
+		"chi"		"...别无脑选图 ;-)"
+	}
+
+	"Cannot Start Vote"
+	{
+		"#format"	"{1:i}"
+		"chi"		"投票早已开始.  在{1}s后重试."
+	}
+
+	"Tie Vote"
+	{
+		"#format"	"{1:i}"
+		"chi"		"前{1}位得票的地图票数相同.\n需要新一轮投票!"
+	}
+}

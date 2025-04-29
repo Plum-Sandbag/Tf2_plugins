@@ -1,0 +1,19 @@
+"Games"
+{
+    "tf"
+    {
+        "Offsets"
+        {
+            "RocketTouch"
+            {
+                "windows"    "232"
+                "linux"      "233"
+            }
+            "SRocketTouch"
+            {
+                "windows"    "232"
+                "linux"      "233"
+            }
+        }
+    }
+}
