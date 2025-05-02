@@ -498,7 +498,7 @@ public Action:Timer_RocketCheck(Handle:timer, any:entref)
 //////////////////////////////////////////////////
 public Action:Timer_LifeCheck(Handle:timer, any:entref)
 {
-	new entity = EntRefToEntIndex(entity);
+	new entity = EntRefToEntIndex(entref);
 	if( !IsValidEntity(entity) )
 	{
 		DoKillData(entity);
